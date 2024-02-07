@@ -16,5 +16,7 @@ code .
 ```
 ## Contributing
 Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi değiştirmek istediğinizi tartışmak için bir konu açınız.
+
+![Proje odev resmi](pic1.jpg)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
