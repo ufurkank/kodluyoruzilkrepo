@@ -17,7 +17,7 @@ body {
 }
 
 .nav-text {
-    background-color: #76453B;
+    background-color: #43766C;
     color: #dfcfbb;
 }
 
@@ -29,6 +29,9 @@ body {
     color: #43766C;
 }
 
-ul {
-    list-style-type: square;
+.no-box {
+    list-style-type: none;
 }
+
+
+
