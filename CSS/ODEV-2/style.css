@@ -13,3 +13,41 @@
 .input {
     text-align: left;
 }
+
+
+.container {
+    width: 69%;
+    margin: 5px 350px;
+}
+
+.box {
+    margin: 2px;    
+} 
+
+.light-green {
+    background-color: #7EE5DA;
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+.green {
+    background-color: #70CCC2;
+    width: 300px;
+    height: 100px;
+    float: left;
+}
+
+.dark-green {
+    background-color: #62B3AA;
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+footer {
+    margin: 125px auto;
+    float: clear;
+    text-align: center;
+
+}
