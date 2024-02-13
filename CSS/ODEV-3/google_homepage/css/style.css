@@ -15,6 +15,8 @@
   padding: 5px 5px;
   text-decoration: none;
   float: right;
+  max-width: 100%;
+  height: auto;
 }
 
 .headerli a:hover {
@@ -104,6 +106,9 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .googlesearch {
@@ -114,7 +119,17 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
+  background-color: #f2f2f2;
+  border: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f6368;
+  font-size: 14px;
+  height: 36px;
+  border-radius: 4px;
 }
+  .googlesearch:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  }
 
 .feelinglucky {
   padding: 0 16px;
@@ -123,7 +138,17 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
+  background-color: #f2f2f2;
+  border: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f6368;
+  font-size: 14px;
+  height: 36px;
+  border-radius: 4px;
 }
+  .feelinglucky:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  }
 
 .footer {
   margin: 0;
@@ -136,6 +161,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  list-style: none;
+  background-color: #f2f2f2;
 }
 
 .footerli {
