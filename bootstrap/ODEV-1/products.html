@@ -8,131 +8,143 @@
     <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   </head>
   <body style="background-color: #E9ECEF;">
     <!---------- NAV --------->
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4 title">Patili Dostlar Pet Shop</span>
+          <span class="fs-1 title badge ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+          </svg>
+          Patili Dostlar Pet Shop</span>
         </a>
   
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Anasayfa</a></li>
-          <li class="nav-item"><a href="products.html" class="nav-link">Ürünlerimiz</a></li>
-          
-          <li class="nav-item"><a href="about-us.html" class="nav-link">Hakkımızda</a></li>
-        </ul>
+        <nav style="background-color: transparent;" class="navbar">
+          <form class="container-fluid justify-content-start nav-font-family">
+            <a href="index.html"><button  class="btn btn-outline-succes me-1 fw-bold fs-2" type="button">Anasayfa</button></a>
+            <a href="products.html"><button  style="color: rgb(0, 48, 0);" class="btn btn-sm fw-bold fs-2" type="button">Ürünlerimiz</button></a>
+            <a href="about-us.html"><button style="color: rgb(0, 48, 0);" class="btn btn-sm fw-bold fs-2" type="button">Hakkımızda</button></a>
+
+          </form>
+        </nav>
+
       </header>
     </div>
+   
 
     <!---------- DIV  -------->
-    <div class="card-group">
-      <div class="card">
-        <img  class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=318,quality=85/37708/uploads/urunresimleri/buyuk/pro-plan-adult-tavuklu-yetiskin-kedi-m-cc2d-f.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="container"> 
+      <div class="card-group m-top">
+        <div class="card h-100">
+          <img  class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=318,quality=85/37708/uploads/urunresimleri/buyuk/pro-plan-adult-tavuklu-yetiskin-kedi-m-cc2d-f.jpg" alt="Kedi Maması cap">
+          <div class="card-body">
+            <h5 class="card-title">Kedi Maması</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/37708/uploads/urunresimleri/buyuk/pawise-kedi-oyun-alanipawise-341-48.png" alt="Kedi Oyuncağı cap">
+          <div class="card-body">
+            <h5 class="card-title">Kedi Oyuncağı</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=533,quality=85/42813/uploads/urunresimleri/buyuk/ever-clean-spring-garden-bahar-kokulu--e6ef7-.jpg" alt="Kedi Kumu">
+          <div class="card-body">
+            <h5 class="card-title">Kedi Kumu</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/37708/uploads/urunresimleri/buyuk/pawise-kedi-oyun-alanipawise-341-48.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/37708/uploads/urunresimleri/buyuk/pedigree-sigir-etli-konserve-kopek-mam-5f0116.jpg" alt="Köpek Maması cap">
+          <div class="card-body">
+            <h5 class="card-title">Köpek Maması</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/pawise-real-tuff-kopek-oyuncagi-tavsan-82c84-.png" alt="Köpek Oyuncağı cap">
+          <div class="card-body">
+            <h5 class="card-title">Köpek Oyuncağı</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/tailpetz-step-in-siyah-gogus-tasmasita-77a-f7.png" alt="Köpek Tasması cap">
+          <div class="card-body">
+            <h5 class="card-title">Köpek Tasması</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://m.media-amazon.com/images/I/81dGAI2OnIL._AC_UF1000,1000_QL80_.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=318,quality=85/37708/uploads/urunresimleri/buyuk/gold-wings-paraket-yemi-500-grgold-win-30-40c.png" alt="Kuş Maması cap">
+          <div class="card-body">
+            <h5 class="card-title">Kuş Maması</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/rotipet-kus-oyuncagi-ikili-salincakrot--2997-.jpg" alt="Kuş Oyuncağı cap">
+          <div class="card-body">
+            <h5 class="card-title">Kuş Oyuncağı</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/dayang-papagan-kafesi-52-x-41-x-785day--1e78-.jpg" alt="Kuş Kafesi cap">
+          <div class="card-body">
+            <h5 class="card-title">Kuş Kafesi</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/dajana-discus-premium-250-ml-50ml-prom-a5a566.jpg" alt="Balık Yemi cap">
+          <div class="card-body">
+            <h5 class="card-title">Balık Yemi</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/37708/uploads/urunresimleri/buyuk/aquael-hortum-ici-temizleme-fircasi-16-3-1836.jpg" alt="Akvaryum Fırçası cap">
+          <div class="card-body">
+            <h5 class="card-title">Akvaryum Fırçası</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/marina-beta-seti-ez-care-aqua-siyah-25-c9909f.png" alt="Fanus cap">
+          <div class="card-body">
+            <h5 class="card-title">Fanus</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card-group">
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/37708/uploads/urunresimleri/buyuk/pedigree-sigir-etli-konserve-kopek-mam-5f0116.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/pawise-real-tuff-kopek-oyuncagi-tavsan-82c84-.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/tailpetz-step-in-siyah-gogus-tasmasita-77a-f7.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=318,quality=85/37708/uploads/urunresimleri/buyuk/gold-wings-paraket-yemi-500-grgold-win-30-40c.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/rotipet-kus-oyuncagi-ikili-salincakrot--2997-.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/dayang-papagan-kafesi-52-x-41-x-785day--1e78-.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/dajana-discus-premium-250-ml-50ml-prom-a5a566.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/37708/uploads/urunresimleri/buyuk/aquael-hortum-ici-temizleme-fircasi-16-3-1836.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-products" src="https://static.ticimax.cloud/cdn-cgi/image/width=500,quality=85/37708/uploads/urunresimleri/buyuk/marina-beta-seti-ez-care-aqua-siyah-25-c9909f.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-   
     
     <!---------- FOOTER ------>
 
