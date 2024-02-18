@@ -1,6 +1,7 @@
 .navbarbg {
   height: 55px;
   background-color: white;
+
 }
 
 input.searche {
@@ -127,4 +128,13 @@ button.ref:hover {
   font-weight: bold;
   font-size: 14px;
   margin-left: 8px;
+}
+
+.bottom-panels {
+  margin-top: 80px;
+  margin-left: 30px; /*********** kaldirilabilir ******************/
+}
+
+.fixed-top {
+  background-color: white;
 }
