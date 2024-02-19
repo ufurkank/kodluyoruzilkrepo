@@ -71,9 +71,6 @@ input.content::placeholder {
   background-size: auto;
 }
 
-div.card {
-  border-radius: 10px;
-}
 
 .header {
   font-family: Arial, Helvetica, sans-serif;
