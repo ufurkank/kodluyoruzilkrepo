@@ -130,9 +130,8 @@ button.ref:hover {
   margin-left: 8px;
 }
 
-.bottom-panels {
-  margin-top: 80px;
-  margin-left: 30px; /*********** kaldirilabilir ******************/
+.post-text {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;
 }
 
 .fixed-top {
