@@ -1,0 +1,15 @@
+SORU: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+CEVAP: Kök olarak 7 ifadesini alalım. Ağaç dallarını oluştururken ifadelerin sağına büyükleri, soluna küçükleri yerleştirelim. (Bence en keyifli yöntem :-))       
+        
+        7
+       / \
+      5   8
+     / \   \
+    1   6   9
+     \     /
+      3   9
+     / \
+    0   4
+       /
+      2
