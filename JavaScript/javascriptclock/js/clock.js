@@ -15,7 +15,7 @@ if (input !== null) {
     document.querySelector("#myName").innerHTML = formattedInput;
 }
 
-    // Tarih ve Saat:
+// Tarih ve Saat:
 function showTime() {
     var date = new Date();
     var hours = date.getHours();
@@ -38,7 +38,7 @@ function formatTime(time) {
     } else {
     return time;
     }
-    }
+}
 
 function showDate() {
     var date = new Date();
