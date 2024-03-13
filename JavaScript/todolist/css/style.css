@@ -47,6 +47,7 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+  margin-top: 7px;
 }
 
 .close {
@@ -105,3 +106,4 @@ input {
 .button:hover {
   background-color: #bbb;
 }
+
