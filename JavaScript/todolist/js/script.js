@@ -1,4 +1,3 @@
-
 function newElement() {
   // 1. Giriş alanındaki değeri al trim() ile başındaki ve sonundaki boşlukları kaldır
   var inputValue = document.getElementById("task").value.trim();
@@ -20,6 +19,11 @@ function newElement() {
 
     // Listeye yeni öğeyi ekle
     document.getElementById("list").appendChild(li);
+
+    // Yeni öğeye click eventi ekle
+    li.addEventListener("click", function() {
+      toggleChecked(this);
+    });
 
     // Giriş alanını temizle
     document.getElementById("task").value = "";
@@ -46,11 +50,16 @@ document.addEventListener("DOMContentLoaded", function() {
   listItems.forEach(function(item) {
     item.addEventListener("click", function() {
       // Tıklanan öğenin sınıfını kontrol et ve ekle/çıkar
-      if (this.classList.contains("checked")) {
-        this.classList.remove("checked");
-      } else {
-        this.classList.add("checked");
-      }
+      toggleChecked(this);
     });
   });
 });
+
+function toggleChecked(element) {
+  // Tıklanan öğenin sınıfını kontrol et ve ekle/çıkar
+  if (element.classList.contains("checked")) {
+    element.classList.remove("checked");
+  } else {
+    element.classList.add("checked");
+  }
+}
