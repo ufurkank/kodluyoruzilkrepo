@@ -14,6 +14,7 @@ function newElement() {
     span.textContent = "x";
     span.addEventListener("click", function() {
       li.remove(); // Bu satır, tıklanan li öğesini kaldıracaktır.
+      updateLocalStorage(); // LocalStorage'ı güncelle
     });
     li.appendChild(span);
 
@@ -24,6 +25,9 @@ function newElement() {
     li.addEventListener("click", function() {
       toggleChecked(this);
     });
+
+    // Yeni öğeyi localStorage'a ekle
+    addToLocalStorage(inputValue);
 
     // Giriş alanını temizle
     document.getElementById("task").value = "";
@@ -45,12 +49,21 @@ function newElement() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  // Sayfa yüklendiğinde localStorage'dan öğeleri al
+  var savedItems = JSON.parse(localStorage.getItem("items"));
+  if (savedItems) {
+    savedItems.forEach(function(item) {
+      createListItem(item);
+    });
+  }
+
   var listItems = document.querySelectorAll("#list li");
   // Her liste öğesine click eventi ekle
   listItems.forEach(function(item) {
     item.addEventListener("click", function() {
       // Tıklanan öğenin sınıfını kontrol et ve ekle/çıkar
       toggleChecked(this);
+      updateLocalStorage(); // LocalStorage'ı güncelle
     });
   });
 });
@@ -62,4 +75,45 @@ function toggleChecked(element) {
   } else {
     element.classList.add("checked");
   }
+}
+
+function addToLocalStorage(item) {
+  // localStorage'daki öğeleri al
+  var items = JSON.parse(localStorage.getItem("items")) || [];
+  // Yeni öğeyi ekle
+  items.push(item);
+  // Güncellenmiş listeyi localStorage'a kaydet
+  localStorage.setItem("items", JSON.stringify(items));
+}
+
+function updateLocalStorage() {
+  // Tüm liste öğelerini al
+  var listItems = document.querySelectorAll("#list li");
+  var items = [];
+  // Her liste öğesini dön
+  listItems.forEach(function(item) {
+    // Öğenin içeriğini al ve localStorage için items dizisine ekle
+    items.push(item.textContent.trim());
+  });
+  // Güncellenmiş listeyi localStorage'a kaydet
+  localStorage.setItem("items", JSON.stringify(items));
+}
+
+function createListItem(itemContent) {
+  // Yeni bir liste öğesi oluştur
+  var li = document.createElement("li");
+  var t = document.createTextNode(itemContent);
+  li.appendChild(t);
+
+  let span = document.createElement("span");
+  span.className = "close";
+  span.textContent = "x";
+  span.addEventListener("click", function() {
+    li.remove(); // Bu satır, tıklanan li öğesini kaldıracaktır.
+    updateLocalStorage(); // LocalStorage'ı güncelle
+  });
+  li.appendChild(span);
+
+  // Listeye yeni öğeyi ekle
+  document.getElementById("list").appendChild(li);
 }
