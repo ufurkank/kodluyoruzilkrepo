@@ -32,7 +32,7 @@ const menu = [
     category: "China",
     price: 5.99,
     img:
-      "https://www.savingdessert.com/wp-content/uploads/2019/02/Dan-Dan-Noodles-10.jpg",
+      "https://www.halfbakedharvest.com/wp-content/uploads/2019/10/Better-Than-Takeout-Dan-Dan-Noodles-1-1-700x1050.jpg",
     desc: `Dan dan noodle, serving with green onion `,
   },
   {
@@ -81,4 +81,58 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+// Butonları ekleyeceğimiz konteyneri seçiyoruz
+const btnContainer = document.querySelector(".btn-container");
 
+// Tüm kategorilerin bir listesini alıyoruz
+const categories = ['All', ...new Set(menu.map(item => item.category))];
+
+// Her bir kategori için bir buton oluşturuyoruz
+categories.forEach(category => {
+  // Buton oluşturuluyor
+  const btn = document.createElement("button");
+
+  // Butonun CSS sınıflarını ekliyoruz
+  btn.classList.add("btn", "btn-outline-dark", "btn-item");
+
+  // Butonun metnini kategori adıyla ayarlıyoruz
+  btn.textContent = category;
+
+  // Butona tıklama olayı ekliyoruz, tıklandığında filterItems fonksiyonunu çağırıyoruz
+  btn.addEventListener("click", () => filterItems(category));
+
+  // Oluşturulan butonu HTML'e ekliyoruz
+  btnContainer.appendChild(btn);
+});
+
+
+// Menüyü filtrelemek için kullanılan fonksiyon
+function filterItems(category) {
+  let filteredMenu;
+  if (category === 'All') {
+    filteredMenu = menu; // Eğer 'All' kategorisi seçildiyse, tüm menüyü göster
+  } else {
+    filteredMenu = menu.filter(item => item.category === category); // Seçilen kategoriye göre menüyü filtrele
+  }
+  displayMenu(filteredMenu); // Filtrelenmiş menüyü ekrana göster
+}
+
+// Menüyü ekrana gösteren fonksiyon
+function displayMenu(menuItems) {
+  const section = document.querySelector(".section-center");
+  section.innerHTML = menuItems.map(item => `
+    <div class="menu-items col-lg-6 col-sm-12">
+      <img src="${item.img}" alt="${item.title}" class="photo" />
+      <div class="menu-info">
+        <div class="menu-title">
+          <h4>${item.title}</h4>
+          <h4 class="price">${item.price}</h4>
+        </div>
+        <div class="menu-text">${item.desc}</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+// Başlangıçta tüm menüyü göster
+filterItems('All');
